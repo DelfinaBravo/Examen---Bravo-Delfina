@@ -14,6 +14,8 @@
 
 .encabezado img{
     background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
     margin-left: 10px;
 }
 
@@ -131,7 +133,7 @@ article p{
 }
 
 form{
-    padding: 10px;
+    padding: 30px;
 }
 
 form input{
@@ -174,15 +176,50 @@ form h1{
     border: none;
 }
 
+.contenedor_registro{
+    margin: 50px 250px;
+    border:  dashed #343434;
+    display: flex;
+    justify-content: center;
+}
+
 .contenedor_registro h1{
     color: #000000;
+    text-align: center;
 }
 
 .contenedor_registro label{
+    margin-top: 30px;
     color: #000000;
 }
 
+.contenedor_registro input{
+    padding: 20px;
+}
+
 .contenedor_registro .btnreg{
+    border: none;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     width: 90px;
     margin-top: 30px;
+    background-color: #e5c5a6;
 }
+
+.lista{
+    border:  dashed #343434;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listaa{
+    margin: 0px 190px;
+}
+
+.listaa .info{
+    margin-top: 40px;
+}
+

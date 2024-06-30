@@ -12,7 +12,7 @@
 <body>
 
     <header class="encabezado">
-        <img src="{% static 'img/Fondo.png' %}" alt="Logo" title="Home">
+        <a href=""><img src="{% static 'img/Fondo.png' %}" alt="Logo" title="Home"></a>
         <!-- ul.menu>a*4 -->
         <ul class="menu">
             <a href="{% url 'registrar' %}">Registrar</a>
@@ -72,18 +72,16 @@
                 </article>
             </div>
             <!-- div.tarjeta -->
-            <div class="tarjeta">
+            <!-- <div class="tarjeta">
                 <img src="{% static 'img/d.png' %}" alt="">
                 <article>
-                    <!-- Titulo -->
-                    <h1>DNI:</h1>
+                    <h1>Codigo:</h1>
                     <h3>Apellido:</h3>
                     <h3>Nombre:</h3>
                     <h3>Precio:</h3>
-                    <!-- Parrafo -->
                     <p>Descripcion:</p>
                 </article>
-            </div>
+            </div> -->
         </section>
         {% endblock %}
     </main>

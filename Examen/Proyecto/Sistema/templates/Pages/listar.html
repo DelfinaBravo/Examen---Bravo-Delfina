@@ -1,15 +1,18 @@
 {% extends 'index.html' %}
-
+{% load static %}
 {% block contenedorgeneral %}
     <!-- Recorremos cada elem -->
     {% for i in listarr %}
     <div class="lista">
-        <h1 class="titulo">INFORMACIÓN</h1>
-        <h1>El DNI es: {{ i.DNI }}</h1>
-        <h2>El Apellido es: {{ i.Apellido }}</h2>
-        <h3>El Nombre es: {{ i.Nombre }}</h3>
-        <p>La descripcion es: {{ i.Descripcion }}</p>
-        <img src="{{i.productos.url}}" alt="">
+        <img src="{% static 'img/d.png' %}" alt="">
+        <div class="listaa">
+            <h1 class="info">INFORMACIÓN</h1>
+            <h2 class="info">El Codigo es: {{ i.Codigo }}</h2>
+            <h3 class="info">El Precio es: {{ i.Precio }}</h3>
+            <h3 class="info">El Nombre es: {{ i.Nombre }}</h3>
+            <h4 class="info">La descripcion es: {{ i.Descripcion }}</h4>
+            <img src="{{ i.productos.url }}" alt="">
+        </div>
     </div>
        
     {% endfor %}

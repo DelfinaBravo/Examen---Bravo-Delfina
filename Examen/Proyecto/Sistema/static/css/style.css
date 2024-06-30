@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    /* Alto */
+    height: 70px;
+    background: #EEEEEE;
+    display:flex;
+    justify-content: space-between;
+}
+
+.encabezado img{
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.menu{
+    /* Interlineado */
+  line-height: 70px; 
+  margin-right: 10px;
+}
+
+.menu a{
+    margin-right: 20px;
+    /* Color de Fuente */
+    color:black ;
+    /* Quitamos linea de Decoración */
+    list-style: none;
+    text-decoration: none;
+    /* Tamaño de la Fuente */
+    font-size: 18px;
+}
+
+/* Hover ---> Al pasar con el mouse
+realiza una accion */
+.encabezado img:hover{
+    filter: shadow(1px 1px 1px #055E68);
+}
+
+.menu a:hover{
+    border-bottom: 2px  #055E68;
+}
+
+.carousel-item img{
+    /* Alto
+    1vh = 16px */
+    height:80vh;
+}
+
+.cuerpo{
+    padding: 15px;
+}
+
+.tarjeta{
+    /* Ancho */
+    width: 980px;
+    /* Alto */
+    height: 450px;
+    /* Borde del elemento */
+    border:  dashed #343434;
+    /* Redondeo las Esquinas */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top: 50px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.tarjeta img{
+    margin-left: -50px;
+}
+
+
+article{
+    padding: 15px;
+}
+
+article h1{
+    font-size: 40px;
+    color: #055E68;
+    text-align: center;
+    margin-right: 90px;
+}
+
+article p{
+    line-height: 30px;
+    /* Tamaño de Fuente */
+    font-size: 18px;
+    /* Margen Superior */
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 90px;
+}
+
+.pie{
+    height: 100px;
+    /* Color de Fondo */
+    background: #EEEEEE;
+    display: flex;
+    /* Centro los elementos */
+    justify-content: center;
+    
+}
+
+.pie img{
+    /* Ancho */
+    width: 50px;
+    /* Alto */
+    height: 50px;
+    margin-right: 8px;
+    /* Margen Superior */
+    margin-top: 20px;
+}
+
+/* contenedor login */
+
+.contenedor_login{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(28, 28, 124);
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-left: auto;
+}
+
+form{
+    padding: 10px;
+}
+
+form input{
+    width: 98%;
+    border-radius: 8px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+form label{
+    font-size: 18px;
+    color: whitesmoke;
+   
+}
+
+.contenedor_login img{
+    width: 450px;
+    height: 300px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 48px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.btnii{
+    height: 30px;
+    font-size: 18px;
+    border: none;
+}
+
+.btn{
+    height: 30px;
+    font-size: 18px;
+    background: rgb(185, 12, 12);
+    color: whitesmoke;
+    border: none;
+}
+
+.contenedor_registro h1{
+    color: #000000;
+}
+
+.contenedor_registro label{
+    color: #000000;
+}
+
+.contenedor_registro .btnreg{
+    width: 90px;
+    margin-top: 30px;
+}

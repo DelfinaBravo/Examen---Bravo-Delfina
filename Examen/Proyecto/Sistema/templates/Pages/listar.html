@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block contenedorgeneral %}
+    <!-- Recorremos cada elem -->
+    {% for i in listarr %}
+    <div class="lista">
+        <h1 class="titulo">INFORMACIÓN</h1>
+        <h1>El DNI es: {{ i.DNI }}</h1>
+        <h2>El Apellido es: {{ i.Apellido }}</h2>
+        <h3>El Nombre es: {{ i.Nombre }}</h3>
+        <p>La descripcion es: {{ i.Descripcion }}</p>
+        <img src="{{i.productos.url}}" alt="">
+    </div>
+       
+    {% endfor %}
+
+{% endblock %}

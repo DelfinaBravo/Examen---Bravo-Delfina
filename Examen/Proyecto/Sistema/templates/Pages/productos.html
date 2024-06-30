@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block contenedorgeneral %}
+    <form action="" method="post" class="productos">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ field }}
+        {{ form.media }}
+        <input type="submit" value="registrar" class="btn">
+    </form>
+{% endblock %}
